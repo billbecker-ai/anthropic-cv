@@ -272,22 +272,6 @@
             font-size: 1.3rem;
             color: var(--secondary-color);
         }
-
-        .skills-container {
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: center;
-            gap: 20px;
-            margin-top: 40px;
-        }
-        
-        .skill-tag {
-            background: var(--light-color);
-            color: var(--primary-color);
-            padding: 10px 20px;
-            border-radius: 50px;
-            font-weight: 500;
-        }
         
         .team-section {
             background-color: #f0f2f5;
@@ -378,114 +362,6 @@
         .mission-card h3 {
             color: var(--primary-color);
             margin-bottom: 15px;
-        }
-        
-        .consulting-section {
-            background-color: white;
-            padding: 80px 0;
-            text-align: center;
-        }
-        
-        .consulting-container {
-            max-width: 800px;
-            margin: 0 auto;
-        }
-        
-        .consulting-options {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-            gap: 30px;
-            margin-top: 50px;
-        }
-        
-        .consulting-card {
-            background: var(--light-color);
-            border-radius: 10px;
-            padding: 30px;
-            text-align: center;
-            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
-            position: relative;
-            overflow: hidden;
-            transition: transform 0.3s, box-shadow 0.3s;
-        }
-        
-        .consulting-card:hover {
-            transform: translateY(-5px);
-            box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
-        }
-        
-        .consulting-card h3 {
-            color: var(--primary-color);
-            margin-bottom: 15px;
-            font-size: 1.5rem;
-        }
-        
-        .consulting-price {
-            font-size: 2.5rem;
-            font-weight: 700;
-            color: var(--secondary-color);
-            margin: 20px 0;
-        }
-        
-        .consulting-period {
-            font-size: 0.9rem;
-            color: var(--text-color);
-            display: block;
-            margin-top: -15px;
-            margin-bottom: 20px;
-        }
-        
-        .consulting-features {
-            text-align: left;
-            margin-bottom: 25px;
-            min-height: 150px;
-        }
-        
-        .consulting-features li {
-            margin-bottom: 10px;
-            position: relative;
-            padding-left: 25px;
-            list-style: none;
-        }
-        
-        .consulting-features li:before {
-            content: "✓";
-            position: absolute;
-            left: 0;
-            color: var(--secondary-color);
-            font-weight: bold;
-        }
-        
-        .payment-button {
-            display: inline-block;
-            background-color: var(--secondary-color);
-            color: white;
-            padding: 12px 30px;
-            border-radius: 50px;
-            text-decoration: none;
-            font-weight: 600;
-            transition: all 0.3s;
-            margin-top: 20px;
-            border: none;
-            cursor: pointer;
-        }
-        
-        .payment-button:hover {
-            background-color: var(--primary-color);
-            transform: translateY(-3px);
-            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
-        }
-        
-        .popular-tag {
-            position: absolute;
-            top: 20px;
-            right: -35px;
-            background: var(--secondary-color);
-            color: white;
-            padding: 5px 40px;
-            font-size: 0.8rem;
-            font-weight: 600;
-            transform: rotate(45deg);
         }
         
         .edu-background {
@@ -771,10 +647,6 @@
                 height: 150px;
             }
             
-            .consulting-options {
-                grid-template-columns: 1fr;
-            }
-            
             .chat-window {
                 width: 300px;
                 height: 450px;
@@ -796,7 +668,6 @@
                     <li><a href="#safety">AI Safety</a></li>
                     <li><a href="#mission">Mission-Driven</a></li>
                     <li><a href="#why-anthropic">Why Anthropic</a></li>
-                    <li><a href="#consulting">Consulting</a></li>
                     <li><a href="#contact">Contact</a></li>
                 </ul>
             </nav>
@@ -826,17 +697,6 @@
                     <p>I'm a GTM leader with extensive experience managing sales teams across product categories and market segments. With a consistent track record of outperformance (avg. 130% quota attainment), I specialize in building and scaling high-performance teams that drive adoption of innovative technologies.</p>
                     <p>My background in the U.S. Coast Guard has instilled in me a deep commitment to mission-driven work that creates positive impact while managing potential risks. This perspective has guided my approach to leadership throughout my career in financial technology and platform partnerships.</p>
                 </div>
-            </div>
-            
-            <div class="skills-container">
-                <span class="skill-tag">Strategic Sales Leadership</span>
-                <span class="skill-tag">Market Expansion</span>
-                <span class="skill-tag">C-Level Engagement</span>
-                <span class="skill-tag">GTM Strategy</span>
-                <span class="skill-tag">Consumption-Based Pricing</span>
-                <span class="skill-tag">New Business Development</span>
-                <span class="skill-tag">Complex Negotiations</span>
-                <span class="skill-tag">Mission-Driven Leadership</span>
             </div>
         </div>
     </section>
@@ -1020,60 +880,6 @@
                 <div class="vision-point">
                     <h3>Product-Led Growth Expertise</h3>
                     <p>Having led teams supporting technical products like Stripe's Banking-as-a-Service APIs, I understand how to build sales organizations that can effectively communicate complex capabilities to technical founders and C-level executives. This approach will be valuable for communicating Anthropic's advanced capabilities in areas like AI agents, Model Context Protocol, RAG, and Extended Thinking.</p>
-                </div>
-            </div>
-        </div>
-    </section>
-    
-    <section id="consulting" class="consulting-section">
-        <div class="container">
-            <h2>AI Leadership Consulting</h2>
-            <div class="section-intro">
-                <p>Leverage my experience in building high-performance sales teams and driving adoption of innovative technologies. I offer consulting services to help organizations develop effective AI go-to-market strategies while ensuring responsible deployment.</p>
-            </div>
-            
-            <div class="consulting-options">
-                <div class="consulting-card">
-                    <h3>Strategy Session</h3>
-                    <div class="consulting-price">$299</div>
-                    <span class="consulting-period">one-time</span>
-                    <ul class="consulting-features">
-                        <li>90-minute virtual consultation</li>
-                        <li>AI adoption strategy review</li>
-                        <li>Sales team structure recommendations</li>
-                        <li>Follow-up email with key insights</li>
-                    </ul>
-                    <a href="https://buy.stripe.com/your-payment-link-1" class="payment-button">Book a Session</a>
-                </div>
-                
-                <div class="consulting-card">
-                    <div class="popular-tag">Popular</div>
-                    <h3>GTM Implementation</h3>
-                    <div class="consulting-price">$999</div>
-                    <span class="consulting-period">per month</span>
-                    <ul class="consulting-features">
-                        <li>Weekly strategy calls (60 minutes)</li>
-                        <li>Custom AI go-to-market playbook</li>
-                        <li>Sales enablement materials</li>
-                        <li>Responsible AI deployment framework</li>
-                        <li>Direct access via email</li>
-                    </ul>
-                    <a href="https://buy.stripe.com/your-payment-link-2" class="payment-button">Get Started</a>
-                </div>
-                
-                <div class="consulting-card">
-                    <h3>Executive Advisory</h3>
-                    <div class="consulting-price">$2,499</div>
-                    <span class="consulting-period">per month</span>
-                    <ul class="consulting-features">
-                        <li>Bi-weekly executive sessions</li>
-                        <li>AI sales leadership coaching</li>
-                        <li>Team structure & hiring guidance</li>
-                        <li>Competitive landscape analysis</li>
-                        <li>Pricing strategy development</li>
-                        <li>On-demand strategic consulting</li>
-                    </ul>
-                    <a href="https://buy.stripe.com/your-payment-link-3" class="payment-button">Schedule a Call</a>
                 </div>
             </div>
         </div>
