@@ -6,9 +6,9 @@
     <title>Bill Becker - AI Sales Leadership</title>
     <style>
         :root {
-            --primary-color: #0a2540;
-            --secondary-color: #625be8;
-            --accent-color: #4361ee;
+            --primary-color: #5955dd; /* Claude purple */
+            --secondary-color: #8f8cf2; /* Lighter Claude purple */
+            --accent-color: #d0cfff; /* Very light purple */
             --light-color: #f8f9fa;
             --dark-color: #212529;
             --text-color: #495057;
@@ -54,10 +54,17 @@
         .logo {
             font-size: 1.5rem;
             font-weight: 700;
+            display: flex;
+            align-items: center;
+        }
+        
+        .logo img {
+            height: 30px;
+            margin-right: 10px;
         }
 
         .highlight {
-            color: var(--secondary-color);
+            color: var(--accent-color);
         }
         
         .nav-links {
@@ -77,7 +84,7 @@
         }
         
         .nav-links a:hover {
-            color: var(--secondary-color);
+            color: var(--accent-color);
         }
         
         .hero {
@@ -156,26 +163,15 @@
         
         .about-section {
             display: flex;
-            flex-wrap: wrap;
+            flex-direction: column;
             align-items: center;
             justify-content: center;
-            gap: 50px;
-            margin-bottom: 40px;
-        }
-        
-        .about-image {
-            flex: 0 0 300px;
-        }
-        
-        .about-image img {
-            width: 100%;
-            border-radius: 10px;
-            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+            gap: 40px;
         }
         
         .about-content {
-            flex: 1;
-            min-width: 300px;
+            max-width: 800px;
+            text-align: center;
         }
         
         .experience-container {
@@ -270,7 +266,7 @@
         .vision-point h3 {
             margin-bottom: 15px;
             font-size: 1.3rem;
-            color: var(--secondary-color);
+            color: var(--accent-color);
         }
         
         .team-section {
@@ -301,7 +297,7 @@
         }
         
         .safety-section {
-            background: linear-gradient(135deg, #344a6c 0%, #3a236c 100%);
+            background: linear-gradient(135deg, #344a6c 0%, #5955dd 100%);
             color: white;
             padding: 100px 0;
         }
@@ -324,7 +320,7 @@
         }
         
         .safety-card h3 {
-            color: var(--secondary-color);
+            color: var(--accent-color);
             margin-bottom: 15px;
             font-size: 1.4rem;
         }
@@ -424,6 +420,16 @@
         
         .contact-details a:hover {
             text-decoration: underline;
+        }
+        
+        .anthropic-logo {
+            display: flex;
+            justify-content: center;
+            margin-top: 40px;
+        }
+        
+        .anthropic-logo img {
+            height: 50px;
         }
         
         /* Chatbot Styles */
@@ -660,11 +666,14 @@
     <header>
         <div class="container">
             <nav>
-                <div class="logo">Bill Becker <span class="highlight">Leadership</span></div>
+                <div class="logo">
+                    <img src="https://storage.googleapis.com/anthropic-website/images/favicon.svg" alt="Anthropic Logo">
+                    Bill Becker <span class="highlight">Leadership</span>
+                </div>
                 <ul class="nav-links">
                     <li><a href="#about">About</a></li>
                     <li><a href="#experience">Experience</a></li>
-                    <li><a href="#team">Team Leadership</a></li>
+                    <li><a href="#team">Leadership Approach</a></li>
                     <li><a href="#safety">AI Safety</a></li>
                     <li><a href="#mission">Mission-Driven</a></li>
                     <li><a href="#why-anthropic">Why Anthropic</a></li>
@@ -679,7 +688,7 @@
             <div class="hero-content">
                 <img src="images/bill-profile.jpg" alt="Bill Becker" class="profile-image">
                 <h1>Responsible AI Leadership</h1>
-                <p>Mission-driven sales leader with a proven track record of building high-performance teams and driving adoption of innovative technologies</p>
+                <p>Mission-driven sales leader ready to help bridge the gap between AI research advances and their safe, beneficial deployment</p>
                 <a href="#contact" class="cta-button">Get in Touch</a>
             </div>
         </div>
@@ -690,12 +699,10 @@
             <h2>About Me</h2>
             
             <div class="about-section">
-                <div class="about-image">
-                    <img src="images/bill-about.jpg" alt="Bill Becker">
-                </div>
                 <div class="about-content">
                     <p>I'm a GTM leader with extensive experience managing sales teams across product categories and market segments. With a consistent track record of outperformance (avg. 130% quota attainment), I specialize in building and scaling high-performance teams that drive adoption of innovative technologies.</p>
                     <p>My background in the U.S. Coast Guard has instilled in me a deep commitment to mission-driven work that creates positive impact while managing potential risks. This perspective has guided my approach to leadership throughout my career in financial technology and platform partnerships.</p>
+                    <p>Having worked with regulated technologies at Stripe, I understand that the constraints posed by ensuring safe & beneficial deployment actually help companies move faster and increase commercial viability. This experience has taught me that customers trust partners most when they are direct, transparent, and act in accordance with their principles.</p>
                 </div>
             </div>
         </div>
@@ -756,36 +763,36 @@
 
     <section id="team" class="team-section">
         <div class="container">
-            <h2>Team Building Approach</h2>
+            <h2>Leadership Approach</h2>
             <div class="section-intro">
-                <p>My leadership philosophy centers on developing diverse, high-performance teams that can effectively drive AI adoption across different market segments. I believe the right team structure enables both strategic account management and proactive new business development.</p>
+                <p>My leadership philosophy centers on developing diverse, high-performance teams that thrive within regulated environments while driving innovation and growth. I believe building trust through transparency is essential for commercial success.</p>
             </div>
             
             <div class="team-container">
                 <div class="team-card">
-                    <h3>Strategic Account Executives</h3>
+                    <h3>Strategic Relationship Development</h3>
                     <div class="team-card-content">
-                        <p>For established AI-native customers, I develop account executives who excel at:</p>
+                        <p>In regulated industries, I cultivate teams that excel at:</p>
                         <ul class="results">
-                            <li>Deepening C-level relationships with founders and technical leaders</li>
-                            <li>Leading complex, high-stakes commercial negotiations</li>
-                            <li>Aligning customer roadmaps with product vision</li>
-                            <li>Supporting customers through hypergrowth phases</li>
-                            <li>Identifying expansion opportunities within strategic accounts</li>
+                            <li>Building trust-based relationships with technical founders and C-level executives</li>
+                            <li>Navigating complex regulatory landscapes while finding paths to innovation</li>
+                            <li>Aligning customer goals with responsible product implementation</li>
+                            <li>Supporting partners through rapid growth phases</li>
+                            <li>Translating technical capabilities into commercial value</li>
                         </ul>
                     </div>
                 </div>
                 
                 <div class="team-card">
-                    <h3>Startup Account Executives</h3>
+                    <h3>Market Expansion Strategy</h3>
                     <div class="team-card-content">
-                        <p>For new business development with emerging startups, I develop account executives who excel at:</p>
+                        <p>For driving adoption of innovative technologies, I develop approaches that focus on:</p>
                         <ul class="results">
-                            <li>Prospecting and identifying high-potential opportunities</li>
-                            <li>Educating technical stakeholders about AI capabilities</li>
-                            <li>Driving full sales cycle from outbound to implementation</li>
-                            <li>Creating innovative solutions aligned with startup vision</li>
-                            <li>Identifying new market segments and use cases</li>
+                            <li>Identifying high-potential market segments with the right risk profile</li>
+                            <li>Educating stakeholders about both capabilities and appropriate guardrails</li>
+                            <li>Creating sales methodologies that respect constraints while enabling innovation</li>
+                            <li>Building frameworks that position compliance as a competitive advantage</li>
+                            <li>Establishing feedback loops between customers and product development</li>
                         </ul>
                     </div>
                 </div>
@@ -811,23 +818,23 @@
         <div class="container">
             <h2>Commitment to AI Safety</h2>
             <div class="section-intro">
-                <p>I'm deeply aligned with Anthropic's approach to AI safety and believe that responsible leadership in AI sales requires understanding both the transformative potential and the importance of thoughtful deployment.</p>
+                <p>Having explored AI capabilities firsthand, I'm convinced that we're in the midst of exponential technological change that will transform how we live and work. This incredible potential must be paired with principled development and safety practices.</p>
             </div>
             
             <div class="safety-container">
                 <div class="safety-card">
                     <h3>Responsible AI Deployment</h3>
-                    <p>Throughout my career, I've emphasized the importance of responsible product deployment, particularly in highly regulated industries like banking. In the AI space, this means educating customers about best practices, helping them implement proper guardrails, and ensuring they understand both the capabilities and limitations of the technology.</p>
+                    <p>Throughout my career in regulated banking technology, I've seen how the right constraints can actually accelerate innovation. In the AI space, this means working with customers to implement proper guardrails while helping them fully leverage the transformative capabilities of frontier AI models.</p>
                 </div>
                 
                 <div class="safety-card">
                     <h3>Balancing Innovation and Safety</h3>
-                    <p>The AI field requires thoughtful balance between innovation and safety. I believe in building sales teams that serve as trusted advisors to customers, helping them navigate this balance by understanding their specific use cases and guiding them toward responsible implementation approaches tailored to their needs.</p>
+                    <p>The exponential progress of AI requires thoughtful balance. My experience at Stripe has shown that compliance-first solutions become a competitive advantage, allowing customers to focus on building their business rather than worrying about unintended consequences. This approach will be crucial for AI adoption.</p>
                 </div>
                 
                 <div class="safety-card">
-                    <h3>Commercial Implementation of Safety Principles</h3>
-                    <p>I appreciate Anthropic's comprehensive approach to AI safety, including Constitutional AI, Responsible Scaling Policy, and Mechanistic Interpretability. My experience implementing structured frameworks in commercial settings will help translate these principles into practical sales methodologies that align customer success with responsible AI deployment.</p>
+                    <h3>Trust Through Transparency</h3>
+                    <p>I appreciate Anthropic's comprehensive approach to AI safety through Constitutional AI, mechanistic interpretability, and responsible scaling policies. These frameworks build the trust necessary for customers to adopt AI for their most important use cases, making safety principles commercially indispensable.</p>
                 </div>
             </div>
         </div>
@@ -863,24 +870,28 @@
         <div class="container">
             <h2>Why Anthropic</h2>
             <div class="section-intro">
-                <p>I'm passionate about leading Anthropic's sales team in New York, helping drive adoption of safe, frontier AI through strategic partnerships with innovative startups while ensuring responsible deployment of AI technology.</p>
+                <p>I'm thrilled at the prospect of working at Anthropic and finding a role where I can have a positive impact on this mission-focused company and society. Further advancements in AI technology will change the world soon, and I want to help ensure those changes are beneficial.</p>
             </div>
             
             <div class="vision-points">
                 <div class="vision-point">
-                    <h3>Mission Alignment</h3>
-                    <p>As someone with a background in the Coast Guard and experience in highly regulated industries, I'm deeply aligned with Anthropic's commitment to developing AI that is safe, interpretable, and beneficial. I believe my experience building teams that balance innovation with responsibility makes me uniquely qualified to lead a sales organization that embodies these values.</p>
+                    <h3>Bridging Research and Deployment</h3>
+                    <p>My commercial experience in regulated industries can help bridge the gap between AI research advances and their safe, beneficial deployment. I believe my background building teams that balance innovation with responsibility makes me uniquely qualified to help Anthropic expand its commercial impact while maintaining its commitment to safety.</p>
                 </div>
                 
                 <div class="vision-point">
-                    <h3>Scaling Commercial Operations</h3>
-                    <p>My experience implementing innovative pricing models (including consumption-based pricing at Stripe) and building teams across multiple customer segments positions me to help scale Anthropic's commercial operations across both strategic partnerships and new business development, while maintaining alignment with safety principles.</p>
+                    <h3>Building Trust as Competitive Advantage</h3>
+                    <p>Through my experience at Stripe, I've seen how users choose partners for their most innovative use cases based on trust built through transparency and consistent principles. I'm convinced that Anthropic will have the most commercially successful AI models precisely because of its focus on AI safety, and I want to help communicate this advantage.</p>
                 </div>
                 
                 <div class="vision-point">
-                    <h3>Product-Led Growth Expertise</h3>
-                    <p>Having led teams supporting technical products like Stripe's Banking-as-a-Service APIs, I understand how to build sales organizations that can effectively communicate complex capabilities to technical founders and C-level executives. This approach will be valuable for communicating Anthropic's advanced capabilities in areas like AI agents, Model Context Protocol, RAG, and Extended Thinking.</p>
+                    <h3>Mission-Aligned Commercial Strategy</h3>
+                    <p>As a Public Benefit Corporation dedicated to responsible AI development for the long-term benefit of humanity, Anthropic stands apart. Having experienced Claude's capabilities firsthand, I'm passionate about helping expand its commercial adoption while ensuring implementations align with Anthropic's mission and safety principles.</p>
                 </div>
+            </div>
+            
+            <div class="anthropic-logo">
+                <img src="https://storage.googleapis.com/anthropic-website/images/anthropic-logo-primary-white.svg" alt="Anthropic Logo">
             </div>
         </div>
     </section>
@@ -1143,13 +1154,13 @@
                     return "Bill has extensive experience leading sales teams at Stripe and Mastercard. As Global Head of BaaS Product Sales at Stripe, he leads a team of 16 professionals across the US, UK, and EU, and grew the business by over 200% to multiple hundred millions in ARR.";
                 }
                 else if (message.includes('anthropic') || message.includes('why')) {
-                    return "Bill is passionate about Anthropic because he's deeply aligned with the company's mission of developing AI that is safe, interpretable, and beneficial. His background in the Coast Guard and regulated industries gives him a unique perspective on balancing innovation with responsibility.";
+                    return "Bill is passionate about Anthropic because he believes in the company's mission of developing AI that is safe, interpretable, and beneficial. His experience with Claude has convinced him that further advancements in AI will change the world, and he wants to help ensure these changes benefit humanity.";
                 }
                 else if (message.includes('leadership') || message.includes('team')) {
-                    return "Bill's leadership philosophy centers on building diverse, high-performance teams. He develops sales professionals who can excel at strategic account management and new business development, with a focus on metrics-driven performance and creating standardized yet flexible sales methodologies.";
+                    return "Bill's leadership philosophy centers on building high-performance teams that thrive in regulated environments. He has extensive experience developing sales methodologies that position compliance as a competitive advantage while enabling innovation, which aligns perfectly with Anthropic's approach to responsible AI.";
                 }
                 else if (message.includes('ai') || message.includes('safety')) {
-                    return "Bill is committed to responsible AI deployment. His experience in regulated industries like banking has taught him the importance of balancing innovation with appropriate guardrails. He appreciates Anthropic's approach to AI safety, including Constitutional AI and Responsible Scaling Policy.";
+                    return "Bill is committed to responsible AI deployment. His experience in regulated banking technology has shown that the right constraints can actually accelerate innovation, and he believes Anthropic's focus on safety will be a commercial advantage as AI capabilities continue to advance exponentially.";
                 }
                 else if (message.includes('achievements') || message.includes('accomplishments')) {
                     return "Bill's key achievements include growing Stripe's BaaS business by over 200%, implementing a consumption-based pricing model that grew new business revenue by 10x year-over-year, and selling over $30MM in net-new services revenue at Mastercard in 2020.";
@@ -1158,7 +1169,7 @@
                     return "Bill holds an MBA from the Darden Graduate School of Business at UVA with a Finance concentration, and a Bachelor of Science in Civil Engineering from the U.S. Coast Guard Academy.";
                 }
                 else if (message.includes('coast guard') || message.includes('military')) {
-                    return "Bill served as a Lieutenant in the U.S. Coast Guard from 2008-2013, leading engineering teams and shipboard operations across the Pacific Ocean, Bering Sea, and South China Sea. This experience instilled in him a deep commitment to mission-driven work.";
+                    return "Bill served as a Lieutenant in the U.S. Coast Guard from 2008-2013, leading engineering teams and shipboard operations across the Pacific Ocean, Bering Sea, and South China Sea. This experience instilled in him a deep commitment to mission-driven work and balancing safety with operational effectiveness.";
                 }
                 else if (message.includes('voice') || message.includes('talk') || message.includes('speaking')) {
                     return "Yes, I can listen to your voice questions and respond verbally. Just click the microphone button, speak your question, and I'll answer both in text and with my voice.";
