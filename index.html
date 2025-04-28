@@ -6,10 +6,10 @@
     <title>Bill Becker - Sales Leadership</title>
     <style>
         :root {
-            --primary-color: #e67e22; /* Neutral orange */
-            --secondary-color: #f39c12; /* Lighter orange */
-            --accent-color: #f5d0a9; /* Very light orange */
-            --light-color: #f5f5dc; /* Beige */
+            --primary-color: #c98d59; /* More neutral orange */
+            --secondary-color: #d6ad8b; /* Lighter neutral orange */
+            --accent-color: #ece0d1; /* Very light beige/orange */
+            --light-color: #f5f5e9; /* Light beige */
             --dark-color: #4a4a4a; /* Dark gray for text */
             --text-color: #5d5d5d; /* Medium gray for text */
         }
@@ -224,12 +224,12 @@
         }
         
         .why-anthropic {
-            background-color: var(--primary-color);
-            color: white;
+            background-color: var(--accent-color);
+            color: var(--text-color);
         }
         
         .why-anthropic h2 {
-            color: white;
+            color: var(--primary-color);
         }
         
         .vision-points {
@@ -239,10 +239,11 @@
         }
         
         .vision-point {
-            background: rgba(255, 255, 255, 0.1);
+            background: white;
             padding: 30px;
             border-radius: 10px;
             transition: transform 0.3s;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
         }
         
         .vision-point:hover {
@@ -252,69 +253,7 @@
         .vision-point h3 {
             margin-bottom: 15px;
             font-size: 1.3rem;
-            color: var(--accent-color);
-        }
-        
-        .team-section {
-            background-color: var(--light-color);
-        }
-        
-        .team-container {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-            gap: 30px;
-        }
-        
-        .team-card {
-            background: white;
-            border-radius: 10px;
-            padding: 30px;
-            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
-        }
-        
-        .team-card h3 {
             color: var(--primary-color);
-            margin-bottom: 15px;
-            font-size: 1.4rem;
-        }
-        
-        .team-card-content {
-            min-height: 200px;
-        }
-        
-        .mission-section {
-            background-color: var(--light-color);
-        }
-        
-        .mission-container {
-            display: flex;
-            flex-direction: column;
-            max-width: 800px;
-            margin: 0 auto;
-        }
-        
-        .mission-container p {
-            margin-bottom: 20px;
-            font-size: 1.1rem;
-        }
-        
-        .mission-parallels {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-            gap: 30px;
-            margin-top: 40px;
-        }
-        
-        .mission-card {
-            background: white;
-            border-radius: 10px;
-            padding: 25px;
-            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
-        }
-        
-        .mission-card h3 {
-            color: var(--primary-color);
-            margin-bottom: 15px;
         }
         
         .edu-background {
@@ -618,9 +557,8 @@
                 </div>
                 <ul class="nav-links">
                     <li><a href="#experience">Experience</a></li>
-                    <li><a href="#team">Leadership</a></li>
-                    <li><a href="#mission">Mission-Driven</a></li>
                     <li><a href="#why-anthropic">Why Anthropic</a></li>
+                    <li><a href="#education">Education</a></li>
                     <li><a href="#contact">Contact</a></li>
                 </ul>
             </nav>
@@ -631,8 +569,8 @@
         <div class="container">
             <div class="hero-content">
                 <img src="images/bill-profile.jpg" alt="Bill Becker" class="profile-image">
-                <h1>Mission-Driven Leadership</h1>
-                <p>Sales leader with a proven track record of building high-performance teams, ready to help bridge the gap between AI research advances and their safe, beneficial deployment</p>
+                <h1>Sales Leadership</h1>
+                <p>Proven track record of building high-performance teams, ready to help bridge the gap between AI research advances and their safe, beneficial deployment</p>
                 <a href="#contact" class="cta-button">Get in Touch</a>
             </div>
         </div>
@@ -691,85 +629,6 @@
         </div>
     </section>
 
-    <section id="team" class="team-section">
-        <div class="container">
-            <h2>Leadership Approach</h2>
-            <div class="section-intro">
-                <p>My leadership philosophy centers on developing diverse, high-performance teams that thrive within regulated environments while driving innovation and growth. I build trust through transparency, which I've found to be essential for commercial success. With my experience in regulated banking technology, I've seen how the right constraints can actually accelerate innovation.</p>
-            </div>
-            
-            <div class="team-container">
-                <div class="team-card">
-                    <h3>Strategic Relationship Development</h3>
-                    <div class="team-card-content">
-                        <p>In regulated industries, I cultivate teams that excel at:</p>
-                        <ul class="results">
-                            <li>Building trust-based relationships with technical founders and C-level executives</li>
-                            <li>Navigating complex regulatory landscapes while finding paths to innovation</li>
-                            <li>Aligning customer goals with responsible product implementation</li>
-                            <li>Supporting partners through rapid growth phases</li>
-                            <li>Translating technical capabilities into commercial value</li>
-                        </ul>
-                    </div>
-                </div>
-                
-                <div class="team-card">
-                    <h3>Market Expansion Strategy</h3>
-                    <div class="team-card-content">
-                        <p>For driving adoption of innovative technologies, I develop approaches that focus on:</p>
-                        <ul class="results">
-                            <li>Identifying high-potential market segments with the right risk profile</li>
-                            <li>Educating stakeholders about both capabilities and appropriate guardrails</li>
-                            <li>Creating sales methodologies that respect constraints while enabling innovation</li>
-                            <li>Building frameworks that position compliance as a competitive advantage</li>
-                            <li>Establishing feedback loops between customers and product development</li>
-                        </ul>
-                    </div>
-                </div>
-                
-                <div class="team-card">
-                    <h3>Team Development Philosophy</h3>
-                    <div class="team-card-content">
-                        <p>My approach to building and scaling successful sales teams includes:</p>
-                        <ul class="results">
-                            <li>Defining clear, metrics-driven performance expectations</li>
-                            <li>Creating standardized yet flexible sales methodologies</li>
-                            <li>Establishing robust feedback loops with product and marketing</li>
-                            <li>Encouraging experimentation and knowledge sharing</li>
-                            <li>Maintaining a "roll up your sleeves" team culture</li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section id="mission" class="mission-section">
-        <div class="container">
-            <h2>Mission-Driven Leadership</h2>
-            <div class="mission-container">
-                <p>My career has been shaped by a commitment to mission-driven work, beginning with my service in the U.S. Coast Guard and continuing through my roles in financial technology. I see clear parallels between my Coast Guard experience and Anthropic's approach to AI, reinforcing my belief that further advancements in AI technology will change the world and that tooling that is advancing this quickly requires principled development and safety practices.</p>
-                
-                <div class="mission-parallels">
-                    <div class="mission-card">
-                        <h3>Risk Assessment & Mitigation</h3>
-                        <p>In the Coast Guard, I conducted risk assessments for maritime operations to ensure safety while accomplishing critical missions. Similarly, I value Anthropic's Responsible Scaling Policy that systematically evaluates risk categories as models advance, implementing appropriate deployment measures to ensure safety without hampering innovation.</p>
-                    </div>
-                    
-                    <div class="mission-card">
-                        <h3>Balancing Access with Safety</h3>
-                        <p>The Coast Guard's dual mission of enabling maritime commerce while ensuring safety mirrors the challenge of making powerful AI capabilities widely available while preventing misuse. I'm drawn to Anthropic's thoughtful approach to this balance, carefully considering societal impacts before releases.</p>
-                    </div>
-                    
-                    <div class="mission-card">
-                        <h3>Transparency & Trust</h3>
-                        <p>Both in military leadership and sales leadership, I've found that transparency builds trust. One of the most important things I have learned is that customers trust us most when we are direct and transparent. This matters and creates the foundation for the most innovative use cases.</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
     <section id="why-anthropic" class="why-anthropic">
         <div class="container">
             <h2>Why Anthropic</h2>
@@ -790,13 +649,13 @@
                 
                 <div class="vision-point">
                     <h3>Mission-Aligned Commercial Strategy</h3>
-                    <p>As a Public Benefit Corporation dedicated to responsible AI development for the long-term benefit of humanity, Anthropic stands apart. I want to be one of those Anthropic employees that helps customers, partners, and consumers feel confident trusting Claude with the most important aspects of their lives.</p>
+                    <p>As a Public Benefit Corporation dedicated to responsible AI development for the long-term benefit of humanity, Anthropic stands apart. My background in the U.S. Coast Guard has instilled in me a deep commitment to mission-driven work that creates positive impact while managing potential risks. I want to be one of those Anthropic employees that helps customers, partners, and consumers feel confident trusting Claude with the most important aspects of their lives.</p>
                 </div>
             </div>
         </div>
     </section>
 
-    <section class="edu-background">
+    <section id="education" class="edu-background">
         <div class="container">
             <h2>Education & Background</h2>
             
@@ -1057,10 +916,10 @@
                     return "Bill is passionate about Anthropic because he believes in the company's mission of developing AI that is safe, interpretable, and beneficial. His experience with Claude has convinced him that further advancements in AI will change the world, and he wants to help ensure these changes benefit humanity.";
                 }
                 else if (message.includes('leadership') || message.includes('team')) {
-                    return "Bill's leadership philosophy centers on building high-performance teams that thrive in regulated environments. He has extensive experience developing sales methodologies that position compliance as a competitive advantage while enabling innovation, which aligns perfectly with Anthropic's approach to responsible AI.";
+                    return "Bill's leadership philosophy centers on developing high-performance teams that thrive in regulated environments. He builds trust through transparency and has experience creating sales methodologies that position compliance as a competitive advantage while enabling innovation.";
                 }
                 else if (message.includes('ai') || message.includes('safety')) {
-                    return "Bill is committed to responsible AI deployment. His experience in regulated banking technology has shown that the right constraints can actually accelerate innovation, and he believes Anthropic's focus on safety will be a commercial advantage as AI capabilities continue to advance exponentially.";
+                    return "Bill's experience in regulated banking technology has shown that the right constraints can actually accelerate innovation. He believes Anthropic's focus on safety will be a commercial advantage as AI capabilities continue to advance exponentially.";
                 }
                 else if (message.includes('achievements') || message.includes('accomplishments')) {
                     return "Bill's key achievements include growing Stripe's BaaS business by over 200%, implementing a consumption-based pricing model that grew new business revenue by 10x year-over-year, and selling over $30MM in net-new services revenue at Mastercard in 2020.";
