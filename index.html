@@ -3,15 +3,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Bill Becker - AI Sales Leadership</title>
+    <title>Bill Becker - Sales Leadership</title>
     <style>
         :root {
-            --primary-color: #5955dd; /* Claude purple */
-            --secondary-color: #8f8cf2; /* Lighter Claude purple */
-            --accent-color: #d0cfff; /* Very light purple */
-            --light-color: #f8f9fa;
-            --dark-color: #212529;
-            --text-color: #495057;
+            --primary-color: #e67e22; /* Neutral orange */
+            --secondary-color: #f39c12; /* Lighter orange */
+            --accent-color: #f5d0a9; /* Very light orange */
+            --light-color: #f5f5dc; /* Beige */
+            --dark-color: #4a4a4a; /* Dark gray for text */
+            --text-color: #5d5d5d; /* Medium gray for text */
         }
         
         * {
@@ -57,14 +57,10 @@
             display: flex;
             align-items: center;
         }
-        
-        .logo img {
-            height: 30px;
-            margin-right: 10px;
-        }
 
         .highlight {
-            color: var(--accent-color);
+            color: white;
+            font-weight: 400;
         }
         
         .nav-links {
@@ -73,7 +69,7 @@
         }
         
         .nav-links li {
-            margin-left: 30px;
+            margin-left: 20px;
         }
         
         .nav-links a {
@@ -81,10 +77,12 @@
             text-decoration: none;
             font-weight: 500;
             transition: color 0.3s;
+            padding: 5px 10px;
+            border-radius: 4px;
         }
         
         .nav-links a:hover {
-            color: var(--accent-color);
+            background-color: rgba(255, 255, 255, 0.2);
         }
         
         .hero {
@@ -145,6 +143,7 @@
         
         section {
             padding: 100px 0;
+            background-color: var(--light-color);
         }
         
         section h2 {
@@ -159,19 +158,6 @@
             max-width: 800px;
             margin: 0 auto 60px;
             font-size: 1.1rem;
-        }
-        
-        .about-section {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
-            gap: 40px;
-        }
-        
-        .about-content {
-            max-width: 800px;
-            text-align: center;
         }
         
         .experience-container {
@@ -270,7 +256,7 @@
         }
         
         .team-section {
-            background-color: #f0f2f5;
+            background-color: var(--light-color);
         }
         
         .team-container {
@@ -296,37 +282,8 @@
             min-height: 200px;
         }
         
-        .safety-section {
-            background: linear-gradient(135deg, #344a6c 0%, #5955dd 100%);
-            color: white;
-            padding: 100px 0;
-        }
-        
-        .safety-section h2 {
-            color: white;
-        }
-        
-        .safety-container {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-            gap: 30px;
-        }
-        
-        .safety-card {
-            background: rgba(255, 255, 255, 0.1);
-            border-radius: 10px;
-            padding: 30px;
-            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
-        }
-        
-        .safety-card h3 {
-            color: var(--accent-color);
-            margin-bottom: 15px;
-            font-size: 1.4rem;
-        }
-        
         .mission-section {
-            background-color: #f0f2f5;
+            background-color: var(--light-color);
         }
         
         .mission-container {
@@ -361,7 +318,7 @@
         }
         
         .edu-background {
-            background-color: #f0f2f5;
+            background-color: var(--light-color);
             padding: 60px 0;
         }
         
@@ -420,16 +377,6 @@
         
         .contact-details a:hover {
             text-decoration: underline;
-        }
-        
-        .anthropic-logo {
-            display: flex;
-            justify-content: center;
-            margin-top: 40px;
-        }
-        
-        .anthropic-logo img {
-            height: 50px;
         }
         
         /* Chatbot Styles */
@@ -667,14 +614,11 @@
         <div class="container">
             <nav>
                 <div class="logo">
-                    <img src="https://storage.googleapis.com/anthropic-website/images/favicon.svg" alt="Anthropic Logo">
-                    Bill Becker <span class="highlight">Leadership</span>
+                    Bill Becker <span class="highlight">| Sales Leadership</span>
                 </div>
                 <ul class="nav-links">
-                    <li><a href="#about">About</a></li>
                     <li><a href="#experience">Experience</a></li>
-                    <li><a href="#team">Leadership Approach</a></li>
-                    <li><a href="#safety">AI Safety</a></li>
+                    <li><a href="#team">Leadership</a></li>
                     <li><a href="#mission">Mission-Driven</a></li>
                     <li><a href="#why-anthropic">Why Anthropic</a></li>
                     <li><a href="#contact">Contact</a></li>
@@ -687,32 +631,18 @@
         <div class="container">
             <div class="hero-content">
                 <img src="images/bill-profile.jpg" alt="Bill Becker" class="profile-image">
-                <h1>Responsible AI Leadership</h1>
-                <p>Mission-driven sales leader ready to help bridge the gap between AI research advances and their safe, beneficial deployment</p>
+                <h1>Mission-Driven Leadership</h1>
+                <p>Sales leader with a proven track record of building high-performance teams, ready to help bridge the gap between AI research advances and their safe, beneficial deployment</p>
                 <a href="#contact" class="cta-button">Get in Touch</a>
             </div>
         </div>
     </section>
 
-    <section id="about">
-        <div class="container">
-            <h2>About Me</h2>
-            
-            <div class="about-section">
-                <div class="about-content">
-                    <p>I'm a GTM leader with extensive experience managing sales teams across product categories and market segments. With a consistent track record of outperformance (avg. 130% quota attainment), I specialize in building and scaling high-performance teams that drive adoption of innovative technologies.</p>
-                    <p>My background in the U.S. Coast Guard has instilled in me a deep commitment to mission-driven work that creates positive impact while managing potential risks. This perspective has guided my approach to leadership throughout my career in financial technology and platform partnerships.</p>
-                    <p>Having worked with regulated technologies at Stripe, I understand that the constraints posed by ensuring safe & beneficial deployment actually help companies move faster and increase commercial viability. This experience has taught me that customers trust partners most when they are direct, transparent, and act in accordance with their principles.</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section id="experience" style="background-color: #f8f9fa;">
+    <section id="experience">
         <div class="container">
             <h2>Sales Leadership Experience</h2>
             <div class="section-intro">
-                <p>My career has focused on building and leading teams that drive revenue growth through strategic partnerships and new business development, particularly for innovative technology platforms experiencing rapid adoption.</p>
+                <p>My career has focused on building and leading teams that drive revenue growth through strategic partnerships and new business development, particularly for innovative technology platforms experiencing rapid adoption. I'm passionate about applying my commercial experience to bridge the gap between advanced technology research and beneficial market deployment.</p>
             </div>
             
             <div class="experience-container">
@@ -720,13 +650,13 @@
                     <h3>Global Head of BaaS Product Sales</h3>
                     <span class="company">Stripe</span>
                     <span class="duration">2021 - Present</span>
-                    <p>Leading Stripe's Banking-as-a-Service sales team across the US, UK, and EU, managing both established partnerships and new business development.</p>
+                    <p>Leading Stripe's Banking-as-a-Service sales team across the US, UK, and EU, managing both established partnerships and new business development in a highly regulated environment.</p>
                     <ul class="results">
                         <li>Managing team of 16 professionals working with technical founders and C-level executives</li>
                         <li>Grew business >200% to multiple hundred millions in ARR</li>
                         <li>Led GTM strategy for innovative product launches including Charge Card and Issuer Processor</li>
                         <li>Implemented consumption-based pricing model, growing new business revenue >10x YOY</li>
-                        <li>Developed and executed strategies to identify and capture high-potential market segments</li>
+                        <li>Demonstrated that the constraints posed by ensuring safe & beneficial deployment actually help companies move faster and increase commercial viability</li>
                     </ul>
                 </div>
                 
@@ -765,7 +695,7 @@
         <div class="container">
             <h2>Leadership Approach</h2>
             <div class="section-intro">
-                <p>My leadership philosophy centers on developing diverse, high-performance teams that thrive within regulated environments while driving innovation and growth. I believe building trust through transparency is essential for commercial success.</p>
+                <p>My leadership philosophy centers on developing diverse, high-performance teams that thrive within regulated environments while driving innovation and growth. I build trust through transparency, which I've found to be essential for commercial success. With my experience in regulated banking technology, I've seen how the right constraints can actually accelerate innovation.</p>
             </div>
             
             <div class="team-container">
@@ -814,37 +744,11 @@
         </div>
     </section>
 
-    <section id="safety" class="safety-section">
-        <div class="container">
-            <h2>Commitment to AI Safety</h2>
-            <div class="section-intro">
-                <p>Having explored AI capabilities firsthand, I'm convinced that we're in the midst of exponential technological change that will transform how we live and work. This incredible potential must be paired with principled development and safety practices.</p>
-            </div>
-            
-            <div class="safety-container">
-                <div class="safety-card">
-                    <h3>Responsible AI Deployment</h3>
-                    <p>Throughout my career in regulated banking technology, I've seen how the right constraints can actually accelerate innovation. In the AI space, this means working with customers to implement proper guardrails while helping them fully leverage the transformative capabilities of frontier AI models.</p>
-                </div>
-                
-                <div class="safety-card">
-                    <h3>Balancing Innovation and Safety</h3>
-                    <p>The exponential progress of AI requires thoughtful balance. My experience at Stripe has shown that compliance-first solutions become a competitive advantage, allowing customers to focus on building their business rather than worrying about unintended consequences. This approach will be crucial for AI adoption.</p>
-                </div>
-                
-                <div class="safety-card">
-                    <h3>Trust Through Transparency</h3>
-                    <p>I appreciate Anthropic's comprehensive approach to AI safety through Constitutional AI, mechanistic interpretability, and responsible scaling policies. These frameworks build the trust necessary for customers to adopt AI for their most important use cases, making safety principles commercially indispensable.</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
     <section id="mission" class="mission-section">
         <div class="container">
             <h2>Mission-Driven Leadership</h2>
             <div class="mission-container">
-                <p>My career has been shaped by a commitment to mission-driven work, beginning with my service in the U.S. Coast Guard and continuing through my roles in financial technology. I see clear parallels between my Coast Guard experience and Anthropic's approach to AI:</p>
+                <p>My career has been shaped by a commitment to mission-driven work, beginning with my service in the U.S. Coast Guard and continuing through my roles in financial technology. I see clear parallels between my Coast Guard experience and Anthropic's approach to AI, reinforcing my belief that further advancements in AI technology will change the world and that tooling that is advancing this quickly requires principled development and safety practices.</p>
                 
                 <div class="mission-parallels">
                     <div class="mission-card">
@@ -859,7 +763,7 @@
                     
                     <div class="mission-card">
                         <h3>Transparency & Trust</h3>
-                        <p>Both in military leadership and sales leadership, I've found that transparency builds trust. I appreciate Anthropic's commitment to understanding how models work through Mechanistic Interpretability and creating public standards like Constitutional AI that build trust with users, partners, and regulators.</p>
+                        <p>Both in military leadership and sales leadership, I've found that transparency builds trust. One of the most important things I have learned is that customers trust us most when we are direct and transparent. This matters and creates the foundation for the most innovative use cases.</p>
                     </div>
                 </div>
             </div>
@@ -870,28 +774,24 @@
         <div class="container">
             <h2>Why Anthropic</h2>
             <div class="section-intro">
-                <p>I'm thrilled at the prospect of working at Anthropic and finding a role where I can have a positive impact on this mission-focused company and society. Further advancements in AI technology will change the world soon, and I want to help ensure those changes are beneficial.</p>
+                <p>I'm thrilled at the prospect of working at Anthropic and finding a role where I can have a positive impact on this mission-focused company and society. Having experienced Claude's capabilities firsthand, I'm convinced we're on the verge of taking out all of the friction from ideation to creation, which will greatly impact how we all live and work.</p>
             </div>
             
             <div class="vision-points">
                 <div class="vision-point">
                     <h3>Bridging Research and Deployment</h3>
-                    <p>My commercial experience in regulated industries can help bridge the gap between AI research advances and their safe, beneficial deployment. I believe my background building teams that balance innovation with responsibility makes me uniquely qualified to help Anthropic expand its commercial impact while maintaining its commitment to safety.</p>
+                    <p>My commercial experience in regulated industries can help bridge the gap between AI research advances and their safe, beneficial deployment. I'm confident that the constraints posed by ensuring safe & beneficial deployment of new models will actually help Anthropic move faster and increase commercial viability.</p>
                 </div>
                 
                 <div class="vision-point">
                     <h3>Building Trust as Competitive Advantage</h3>
-                    <p>Through my experience at Stripe, I've seen how users choose partners for their most innovative use cases based on trust built through transparency and consistent principles. I'm convinced that Anthropic will have the most commercially successful AI models precisely because of its focus on AI safety, and I want to help communicate this advantage.</p>
+                    <p>Through my experience at Stripe, I've seen how users choose partners for their most innovative use cases based on trust built through transparency and consistent principles. This trust cannot be underestimated – it is commercially indispensable. I am convinced that Anthropic will have the most commercially successful AI models because of its focus on AI safety.</p>
                 </div>
                 
                 <div class="vision-point">
                     <h3>Mission-Aligned Commercial Strategy</h3>
-                    <p>As a Public Benefit Corporation dedicated to responsible AI development for the long-term benefit of humanity, Anthropic stands apart. Having experienced Claude's capabilities firsthand, I'm passionate about helping expand its commercial adoption while ensuring implementations align with Anthropic's mission and safety principles.</p>
+                    <p>As a Public Benefit Corporation dedicated to responsible AI development for the long-term benefit of humanity, Anthropic stands apart. I want to be one of those Anthropic employees that helps customers, partners, and consumers feel confident trusting Claude with the most important aspects of their lives.</p>
                 </div>
-            </div>
-            
-            <div class="anthropic-logo">
-                <img src="https://storage.googleapis.com/anthropic-website/images/anthropic-logo-primary-white.svg" alt="Anthropic Logo">
             </div>
         </div>
     </section>
@@ -1175,7 +1075,7 @@
                     return "Yes, I can listen to your voice questions and respond verbally. Just click the microphone button, speak your question, and I'll answer both in text and with my voice.";
                 }
                 else {
-                    return "I'd be happy to tell you more about Bill's qualifications for the Anthropic sales leadership role. You can ask about his experience, leadership approach, AI safety commitment, or why he's interested in Anthropic specifically.";
+                    return "I'd be happy to tell you more about Bill's qualifications for the Anthropic sales leadership role. You can ask about his experience, leadership approach, mission-driven background, or why he's interested in Anthropic specifically.";
                 }
             }
             
